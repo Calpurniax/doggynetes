@@ -1,14 +1,14 @@
 # Doggynetes
 
-A containerized application with front connected to Firebase DB and deployed in kubernetes 
+A containerized application with the front connected to Firebase DB and deployed in kubernetes 
 
 ![Screenshot of the web client, with the rendered results and the form for create a new dog](https://raw.githubusercontent.com/Calpurniax/doggynetes/master/doggynetes.png)
 
 ## Getting started
 
-This project uses HTML, CSS y JS vanilla for the client side, which allow the user to read all the dogs in DB or create a new one. For backend we have an API with Python (fastAPI)  and firebase as Database. Each service is containerized in Docker, and was deploy in Kubernetes. 
+This project uses HTML, CSS and JS vanilla for the client side, which allows the user to read all the dogs in DB or create a new one. For backend we have an API with Python (fastAPI)  and firebase as Database. Each service is containerized in Docker, and was deployed in Kubernetes. 
 
-The folder "k8s" contains the YAML for both services and their deployments, its required a credentials.json file from firebase, Docker or Podman installed and a image repository.
+The folder "k8s" contains the YAML for both services and their deployments, it requires a credentials.json file from firebase, Docker or Podman installed and a image repository.
 The credentials.json file, has to be in an .env folder inside "back" folder. And create a secret to inject the credentials in the backend pod with the command:
 
 `kubectl create secret generic --from-literal=credentials --from-file=.env/credentials.json`
@@ -30,7 +30,7 @@ In "back" directory install dependencies by running
 
 `pip install requirements.txt`
 
-Run the main file, it will rise up the server
+Run the main file, it will start the server
 
 `python api.py`
 
@@ -63,6 +63,6 @@ Run the following commands to create the deployments and services:
 Architecture diagram
 
     A front-end web app where you can consult the database or write in it.
-    A Python backend who process the agent requests.    
+    A Python backend that process the agent requests.    
     A firebase database where data is stored.
 
