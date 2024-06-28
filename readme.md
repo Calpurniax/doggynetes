@@ -2,6 +2,8 @@
 
 A containerized application with front connected to Firebase DB and deployed in kubernetes 
 
+![Screenshot of the web client, with the rendered results and the form for create a new dog](https://raw.githubusercontent.com/Calpurniax/doggynetes/master/doggynetes.png)
+
 ## Getting started
 
 This project uses HTML, CSS y JS vanilla for the client side, which allow the user to read all the dogs in DB or create a new one. For backend we have an API with Python (fastAPI)  and firebase as Database. Each service is containerized in Docker, and was deploy in Kubernetes. 
