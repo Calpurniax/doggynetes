@@ -50,13 +50,9 @@ Upload those images to your image repository and write their URLS in each YAML d
 
 *Dont forget to create the secret with the credentials!*
 
-Run the following commands to create the deployments and services:
+Run the following command to create the deployments and services  in the K8s folder:
 
-`kubectl apply -f backendDeployment`
-`kubectl apply -f backendService`
-`kubectl apply -f frontendDeployment`
-`kubectl apply -f frontendService`
-
+`kubectl apply -f .`
 
 ## Architecture
 
